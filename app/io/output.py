@@ -28,7 +28,7 @@ def write_to_file(file_path: str, text: str):
             TypeError: If parameters are not a string.
 
         Examples:
-            >>> write_to_console('hello')
+            >>> write_to_file('file_path', 'hello')
     """
     if not isinstance(text, str) or not isinstance(file_path, str):
         raise TypeError('parameters must be string type.')

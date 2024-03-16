@@ -50,8 +50,10 @@ def read_from_file_pandas(file_path: str):
             TypeError: If parameter is not a string.
 
         Examples:
-            >>> read_from_file()
-            "hello world"
+            >>> read_from_file_pandas()
+            "   name    age
+            0   my_name 100
+            "
     """
     if not isinstance(file_path, str):
         raise TypeError('parameter must be string type.')
